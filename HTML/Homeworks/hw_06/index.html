@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы input</title>
+    <style>
+        div {
+margin: 0 auto;
+}
+
+.form-container {
+width: 500px;
+padding: 20px;
+}     
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <fieldset>
+                <legend>Регистрационная форма пользователя</legend>
+                <p>
+                    Имя <input type="text" size="20">
+                </p>
+           
+            <p>
+                Укажите возраст: <input list="age">
+                <datalist id="age">
+                    <option value="10-15 лет"></option>
+                    <option value="15-20 лет"></option>
+                    <option value="20-30 лет"></option>
+                    <option value="30-40 лет"></option>
+                    <option value="старше 40 лет"></option>
+                </datalist>
+            </p>
+            <p>
+                Укажите пол: <input type="radio" name="radio"> мужской <input type="radio" name="radio"> женский
+            </p>
+            <p>
+                Страна проживания: 
+                <select>
+                    <option>Беларусь</option>
+                    <option>Российская Федерация</option>
+                    <option>Другое государство</option>
+                </select>
+            </p>
+            <p>
+                Владение языками: <input type="checkbox" name="choice" value="RU">русский 
+                                  <input type="checkbox" name="choice" value="BY"> белорусский 
+                                <input type="checkbox" name="choice" value="EN">английский
+            </p>
+            <p>
+                Фото профиля: <input type="file" name="Photo">
+            </p>
+            <p>
+                Введите логин: <input type="text" size="20" name="login"> 
+            </p>
+            <p>
+                Введите пароль: <input type="password" name="password" size="20"> 
+            </p>
+            <p>
+                Повторите пароль: <input type="password" name="password" size="20"> 
+            </p>
+             </fieldset>
+             <p>
+                <input type="submit" value="Отправить">
+                <input type="reset" value="Очистить">
+             </p>
+        </form> 
+    </div>   
+</body>
+</html>
