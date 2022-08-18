@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма параметры автомобиля</title>
+    <style>
+        div {
+margin: 0 auto;
+}
+
+.form-container {
+width: 500px;
+padding: 20px;
+}     
+    </style>
+</head>
+<body>
+    <div class="form-container" style="width: 500px">
+        <form action="handler.php" method="post">
+            <fieldset>
+                <legend><font size="5">Параметры автомобиля</font></legend>
+                <p>Марка автомобиля: <input type="text" size="20"></p>
+                <p>Объем двигателя, см<sup>3</sup> <input placeholder="1900" name="volume"></p>
+                <p>
+                    Область: 
+                        <select>
+                            <option>Брестская</option>
+                            <option>Витебская</option>
+                            <option>Гомельская</option>
+                            <option>Гродненская</option>
+                            <option>Минская</option>
+                            <option>Могилевская</option>
+                            <option>Минск</option>
+                        </select>
+                </p>
+                <p>
+                    Тип КПП:<br>
+                    <input type="radio" name="radio">Автомат<br>
+                    <input type="radio" name="radio">Механика
+                </p>
+                <p>
+                    Двигатель:<br>
+                    <input type="checkbox" name="choice" value="electro">Электро<br>
+                    <input type="checkbox" name="choice" value="diesel">Дизель<br>
+                    <input type="checkbox" name="choice" value="petrol">Бензин<br>
+                    <input type="checkbox" name="choice" value="propane">Пропан-бутан<br>
+                    <input type="checkbox" name="choice" value="methane">Метан<br>
+                </p>
+                <p>
+                    Описание:
+                </p>
+                <textarea name="comment" cols="40" rows="4"></textarea>
+                <p>
+                    <input type="submit" value="Отправить">
+                    <input type="reset" value="Очистить">
+                </p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
