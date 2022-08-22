@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма записи на курсы</title>
+</head>
+<body>
+    <h1><b>Запись на курсы</b></h1>
+    <hr>
+    <form action="handler.php" method="post">
+        <p><b>Имя</b><br>
+        <input maxlength="30" size="40">
+        </p> 
+        <p>
+            Язык программирования: <br>
+            <input type="radio" name="radio"> C++ <br>
+            <input type="radio" name="radio"> PHP <br>
+            <input type="radio" name="radio"> Phyton
+        </p>
+        <p><b>Дополнительная информация</b><br>
+            <textarea name="comment" cols="40" rows="4"></textarea>
+        </p>
+        <p>
+            <b>Секретное слово:</b><br>
+            <input type="password" name="password">
+        </p>
+        <p>
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Очистить">
+        </p>
+   </form> 
+</body>
+</html>
